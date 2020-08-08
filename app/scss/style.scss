@@ -1,5 +1,6 @@
-@import "global";
 @import "fonts";
+@import "vars";
+@import "global";
 
 //start header
 
@@ -120,3 +121,57 @@
 }
 
 //end header
+//start quality
+
+.quality {
+    &__inner {
+        position: relative;
+    }
+    &__video {
+        position: absolute;
+        left: -230px;
+        top: 0;
+        img {
+            display: block;
+        }
+    }
+    &__links {
+        margin-left: 263px;
+        display: flex;
+        a {
+            @include common-font;
+            line-height: 90px;
+            background-color: #171716;
+            transition: all 0.3s;
+            text-align: center;
+            padding: 0 10px;
+            &:hover {
+                background-color: $blue;
+            }
+        }
+    }
+    &__link {
+        &--specs {
+            width: 225px;
+        }
+        &--buy {
+            width: 140px;
+        }
+    }
+    &__content {
+        width: 1107px;
+        height: 901px;
+        margin-left: 263px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+}
+
+
+
+//end quality

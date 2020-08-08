@@ -44,3 +44,33 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.info {
+    background-color: $blue;
+    padding: 59px;
+    position: relative;
+    &__bage {
+        @include common-font;
+        margin-bottom: 46px;
+    }
+    &__title {
+        @include title-font;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 30px;
+        background-image: url(../images/icons/arrow-right.png);
+        right: 59px;
+        top: 59px;
+        background-repeat: no-repeat;
+    }
+    &--quality {
+        width: 517px;
+        height: 378px;
+        .info__title {
+            max-width: 260px;
+        }
+    }
+}
