@@ -30,7 +30,13 @@ h1, h2, h3, h4, h5, h6 {
 body {
     color: #fff;
     background-color: #000;
-    
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .container {
@@ -52,9 +58,11 @@ body {
     &__bage {
         @include common-font;
         margin-bottom: 46px;
+        text-transform: uppercase;
     }
     &__title {
         @include title-font;
+        text-transform: uppercase;
     }
     &::after {
         content: "";
@@ -71,6 +79,41 @@ body {
         height: 378px;
         .info__title {
             max-width: 260px;
+        }
+    }
+    &--noise {
+        width: 687px;
+        height: 382px;
+        background-color: #fff;
+        &::after {
+            background-image: url(../images/icons/arrow-right-blue.png);
+        }
+        .info__bage {
+            color: $blue;
+        }
+        .info__title {
+            max-width: 255px;
+            color: #000;
+        }
+    }
+    &--comfort {
+        margin-top: 115px;
+        width: 437px;
+        flex: 0 0 auto;
+        .info__title {
+            max-width: 175px;
+        }
+    }
+    &--perfomance {
+        width: 585px;
+        height: 296px;
+        
+    }
+    &--battery {
+        background-color: #000;
+        height: 296px;
+        .info__title {
+            max-width: 430px;
         }
     }
 }

@@ -104,7 +104,6 @@
 }
 
 .icon-buttons {
-    padding-top: 64px;
     &__search {
         width: 20px;
         height: 26px;
@@ -117,6 +116,9 @@
         width: 22px;
         height: 26px;
         background-image: url(../images/icons/apple.png);
+    }
+    &--header {
+        padding-top: 64px;
     }
 }
 
@@ -140,11 +142,13 @@
         display: flex;
         a {
             @include common-font;
+            // display: block;
             line-height: 90px;
             background-color: #171716;
             transition: all 0.3s;
             text-align: center;
             padding: 0 10px;
+            text-transform: uppercase;
             &:hover {
                 background-color: $blue;
             }
@@ -172,6 +176,181 @@
 
 }
 
-
-
 //end quality
+//start noise
+
+.noise {
+    &__inner {
+        position: relative;
+        padding-left: 683px;
+    }
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+}
+
+//end  noise
+//start comfort
+
+.comfort {
+    &__inner {
+        display: flex;
+    }
+    &__img img {
+        display: block;
+    }
+}
+
+//end comfort
+//start perfomance
+
+.perfomance {
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__content {
+        width: 913px;
+        height: 704px;
+        position: absolute;
+        left: -230px;
+        top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    &__img img {
+        display: block;
+    }
+}
+
+//end perfomance
+//start specs
+
+.specs {
+    &__inner {
+        margin-left: 98px; 
+        background-color: #171716;
+        padding: 85px 82px 74px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-transform: uppercase;
+        &-value {
+            @include common-font;
+            margin-bottom: 16px;
+        }
+        &-amount {
+            @include title-font;
+            font-size: 55px;
+            line-height: 60px;
+            margin-bottom: 46px;
+            span {
+                @include common-font;
+                font-size: 32px;
+            }
+        }
+        &-description {
+            @include common-font;
+            line-height: 30px;
+        }
+        &--more {
+            width: 235px;
+            .specs__item-description {
+                max-width: 235px;
+            }
+        }
+        &--up {
+            width: 200px;
+            .specs__item-description {
+                max-width: 183px;
+            }
+        }
+        &--around {
+            width: 175px;
+            .specs__item-description {
+                max-width: 170px;
+            }
+        }
+    }
+}
+
+//end specs
+//start battery
+
+.battery {
+    img {
+        display: block;
+    }
+    &__inner {
+        margin-left: 98px;
+        display: flex;
+        padding-bottom: 255px;
+    }
+    &__content {
+        width: 585px;
+        flex: 0 0 auto;
+    }
+    &__buy {
+        flex: 0 0 auto;
+        &-link a {
+            width: 330px;
+            text-align: center;
+            background-color: $blue;
+            text-transform: uppercase;
+            @include common-font;
+            line-height: 90px;
+            span {
+                display: inline-block;
+                padding-right: 78px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 17px;
+                    height: 30px;
+                    background-image: url(../images/icons/arrow-right.png);
+                    right: 0;
+                    top: 31px;
+                }
+            }
+        }
+    }
+
+}
+
+//end battery
+//start footer
+
+.footer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 69px;
+    }
+    &__copyright {
+        @include  helvetica-ul;
+        font-size: 9px;
+        line-height: 9px;
+    }
+}
+
+.footer-menu {
+    ul {
+        display: flex;
+    }
+    &__item {
+        @include common-font;
+        text-transform: uppercase;
+        & + & {
+            margin-left: 80px;
+        }
+    }
+}
+//end footer
