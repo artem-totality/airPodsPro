@@ -133,6 +133,12 @@ body {
   text-transform: uppercase;
 }
 
+.button-menu {
+  position: relative;
+  padding-bottom: 44px;
+  padding-right: 15px;
+}
+
 .button-menu__btn {
   margin-top: 70px;
   width: 20px;
@@ -150,6 +156,48 @@ body {
 
 .button-menu__list {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 134px;
+  z-index: 10;
+  border: 1px solid #0f0f0f;
+}
+
+.button-menu__list-item {
+  width: 200px;
+  text-align: center;
+}
+
+.button-menu__list-item + .button-menu__list-item {
+  border-top: 1px solid #0f0f0f;
+}
+
+.button-menu__list-item a {
+  display: block;
+  padding: 0 15px;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.button-menu__list-item:hover a {
+  background-color: #0f0f0f;
+  font-family: "HelveticaNeueCyr-Black", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.button-menu__list-item--additional {
+  display: none;
+}
+
+.button-menu:hover .button-menu__list {
+  display: block;
 }
 
 .list-menu ul {
