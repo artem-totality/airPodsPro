@@ -1,0 +1,88 @@
+@import "global";
+@import "fonts";
+
+//start header
+
+.header {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__promo {
+        padding: 57px 0 82px;
+        text-align: center;
+        position: relative;
+        &-text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 167px;
+            @include common-font;
+            line-height: 25px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.button-menu {
+    &__btn {
+        margin-top: 70px;
+        width: 20px;
+        cursor: pointer;
+        &-stripes {
+            height: 2px;
+            background-color: #fff;
+            & + & {
+                margin-top: 7px;
+            }
+        }
+    }
+    &__list {
+        display: none;
+    }
+}
+
+.list-menu {
+    ul {
+        display: flex;
+    }
+    &__item {
+        a {
+            @include common-font;
+            text-transform: uppercase;
+            width: 165px;
+            text-align: center;
+            padding: 74px 10px 46px;
+            transition: all 0.3s;
+            &:hover {
+                background-color: #0f0f0f;
+                @include helvetica-black;
+            }
+        }
+        &--active {
+            a {
+                background-color: #0f0f0f;
+                @include helvetica-black;
+            }
+        }
+    }
+}
+
+.icon-buttons {
+    padding-top: 64px;
+    &__search {
+        width: 20px;
+        height: 26px;
+        background-image: url(../images/icons/search.png);
+        background-repeat: no-repeat;
+        background-position: 0 6px;
+        margin-right: 45px;
+    }
+    &__apple {
+        width: 22px;
+        height: 26px;
+        background-image: url(../images/icons/apple.png);
+    }
+}
+
+//end header

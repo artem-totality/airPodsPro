@@ -1,0 +1,208 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  max-width: 1376px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Black";
+  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-UltraLight";
+  src: url("../fonts/HelveticaNeueCyr-UltraLight.woff") format("woff"), url("../fonts/HelveticaNeueCyr-UltraLight.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?w7iq99");
+  src: url("../fonts/icomoon.eot?w7iq99#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?w7iq99") format("truetype"), url("../fonts/icomoon.woff?w7iq99") format("woff"), url("../fonts/icomoon.svg?w7iq99#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\f002";
+}
+
+.icon-apple:before {
+  content: "\f179";
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__promo {
+  padding: 57px 0 82px;
+  text-align: center;
+  position: relative;
+}
+
+.header__promo-text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 167px;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.button-menu__btn {
+  margin-top: 70px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.button-menu__btn-stripes {
+  height: 2px;
+  background-color: #fff;
+}
+
+.button-menu__btn-stripes + .button-menu__btn-stripes {
+  margin-top: 7px;
+}
+
+.button-menu__list {
+  display: none;
+}
+
+.list-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-menu__item a {
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: 165px;
+  text-align: center;
+  padding: 74px 10px 46px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.list-menu__item a:hover {
+  background-color: #0f0f0f;
+  font-family: "HelveticaNeueCyr-Black", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.list-menu__item--active a {
+  background-color: #0f0f0f;
+  font-family: "HelveticaNeueCyr-Black", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.icon-buttons {
+  padding-top: 64px;
+}
+
+.icon-buttons__search {
+  width: 20px;
+  height: 26px;
+  background-image: url(../images/icons/search.png);
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  margin-right: 45px;
+}
+
+.icon-buttons__apple {
+  width: 22px;
+  height: 26px;
+  background-image: url(../images/icons/apple.png);
+}
