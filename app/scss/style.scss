@@ -123,7 +123,7 @@
 }
 
 //end header
-//start quality
+//start quality width="560" height="315"
 
 .quality {
     &__inner {
@@ -135,6 +135,10 @@
         top: 0;
         img {
             display: block;
+        }
+        iframe {
+            width: 493px;
+            height: 277px;
         }
     }
     &__links {
@@ -354,3 +358,7 @@
     }
 }
 //end footer
+
+
+
+@import "media";
