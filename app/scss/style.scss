@@ -13,6 +13,10 @@
         padding: 57px 0 82px;
         text-align: center;
         position: relative;
+        &-img img {
+            display: block;
+            margin: 0 auto;
+        }
         &-text {
             position: absolute;
             left: 50%;
@@ -47,12 +51,14 @@
         left: 0;
         top: 134px;
         z-index: 10;
-        border: 1px solid #0f0f0f;
+        border: 1px solid #1f1f1f;
+        border-bottom: 3px solid #1f1f1f;
+        background-color: #000;
         &-item {
             width: 200px;
             text-align: center;
             & + & {
-                border-top: 1px solid #0f0f0f;
+                border-top: 1px solid #1f1f1f;
             }
             a {
                 display: block;
@@ -118,7 +124,7 @@
         background-image: url(../images/icons/apple.png);
     }
     &--header {
-        padding-top: 64px;
+        margin-top: 64px;
     }
 }
 
@@ -265,21 +271,24 @@
         }
         &--more {
             width: 235px;
-            .specs__item-description {
-                max-width: 235px;
-            }
+            // width: 235px;
+            // .specs__item-description {
+                
+            // }
         }
         &--up {
             width: 200px;
-            .specs__item-description {
-                max-width: 183px;
-            }
+            // width: 200px;
+            // .specs__item-description {
+                
+            // }
         }
         &--around {
             width: 175px;
-            .specs__item-description {
-                max-width: 170px;
-            }
+            // width: 175px;
+            // .specs__item-description {
+                
+            // }
         }
     }
 }
@@ -294,7 +303,7 @@
     &__inner {
         margin-left: 98px;
         display: flex;
-        padding-bottom: 255px;
+        padding-bottom: 180px;
     }
     &__content {
         width: 585px;

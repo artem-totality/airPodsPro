@@ -2,6 +2,7 @@
     .quality {
         &__video {
             position: static;
+            // margin: 60px 0;
             margin-left: 263px;
             iframe {
                 display: block;
@@ -9,25 +10,97 @@
                 height: 493px;
             }
         }
-    }
-}
-
-@media (max-width: 1346px) {
-    .quality {
         &__content {
-            width: 980px;
+            width: 877px;
             height: 798px;
         }
     }
-    //ratio 0.885
     .info {
+        &--battery,
+        &--perfomance,
+        &--comfort,
+        &--noise,
         &--quality {
             width: 458px;
             height: 334px;
         }
+        &--comfort {
+            margin-top: 0;
+        }
+        &--perfomance {
+            .info__title {
+                max-width: 300px;
+            }
+        }
     }
-
-
+    .comfort,
+    .noise {
+        &__img {
+            img {
+                width: 682px;
+            }
+        }
+    }
+    .comfort {
+        &__inner {
+            align-items: flex-end;
+        }
+    }
+    .perfomance {
+        &__content {
+            width: 683px;
+            left: 0;
+            background-position: 40% center;
+            justify-content: flex-start;
+        }
+    }
+    .specs {
+        &__inner {
+            margin-left: 0;
+        }
+    }
+    .battery {
+        &__inner {
+            margin-left: 0;
+            padding-bottom: 200px;
+        }
+        &__content {
+            width: auto;
+            &-img img {
+                width: 458px;
+            }
+        }
+        &__buy {
+            &-img img {
+                width: 682px;
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            width: 1140px;
+            margin: 0 auto;
+        }
+    }
+    .footer-menu {
+        &__item {
+            & + & {
+                margin-left: 45px;
+            }
+        }
+    }
+    .header {
+        &__top {
+            width: 1140px;
+            margin: 0 auto;
+        }
+        &__promo {
+            padding: 60px 0;
+            &-text {
+                bottom: 145px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1169px) {
@@ -53,14 +126,93 @@
             height: 817px;
         }
     }
+    .noise {
+        &__inner {
+            width: 1005px;
+            margin: 0 auto;
+            padding-left: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__img {
+            img {
+                width: 547px;
+            }
+        }
+    }
+    .comfort {
+        &__inner {
+            width: 1005px;
+            margin: 0 auto;
+        }
+        &__img {
+            img {
+                width: 547px;
+            }
+        } 
+    }
+    .perfomance {
+        &__inner {
+            width: 1005px;
+            margin: 0 auto;
+        }
+        &__content {
+            width: 548px;
+            left: 0;
+            background-position: center;
+            justify-content: flex-start;
+        }
+    }
+    .specs {
+        &__inner {
+            width: 1005px;
+            margin: 0 auto;
+        }
+    }
+    .battery {
+        &__inner {
+            padding-bottom: 150px;
+            width: 1005px;
+            margin: 0 auto;
+        }
+        &__buy {
+            &-img img {
+                width: 547px;
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            width: 1005px;
+            position: relative;
+            padding-bottom: 90px;
+        }
+        &__copyright {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            text-align: center;
+            line-height: 14px;
+        }
+    }
+    .header {
+        &__top {
+            width: 1005px;
+        }
+    }
 }
 
 @media (max-width: 1034px) {
     .quality {
+        &__links a {
+            line-height: 75px;
+        }
         &__inner {
             width: 690px;
         }
         &__video {
+            // margin: 50px 0;
             iframe {
                 width: 690px;
                 height: 388px;
@@ -74,24 +226,564 @@
     .info {
         padding: 30px;
         &::after {
+            right: 29px;
             top: 29px;
         }
+        &--battery,
+        &--perfomance,
+        &--comfort,
+        &--noise,
         &--quality {
             width: 360px;
             height: 280px;
+        }
+        &--battery {
+            height: auto;
+            flex: 0 0 auto;
+        }
+    }
+    .noise {
+        &__inner {
+            width: 690px;
+        }
+        &__img {
+            img {
+                width: 328px;
+                height: 280px;
+                object-fit: cover;
+            }
+        }
+    }
+    .comfort {
+        &__inner {
+            width: 690px;
+        }
+        &__img {
+            img {
+                width: 330px;
+                height: 280px;
+                object-fit: cover;
+            }
+        } 
+    }
+    .perfomance {
+        &__inner {
+            width: 690px;
+            margin: 0 auto;
+        }
+        &__img {
+            display: none;
+        }
+        &__content {
+            position: static;
+            width: 100%;
+            height: 561px;
+            background-position: 10% 0;
+        }
+    }
+    .specs {
+        &__inner {
+            width: 690px;
+            padding: 75px 30px;
+        }
+        &__item {
+            &--more {
+                width: 210px;
+            }
+        }
+    }
+    .battery {
+        &__inner {
+            width: 690px;
+            display: block;
+
+        }
+        &__content {
+            display: flex;
+            &-img img {
+                width: 330px;
+                height: 328px;
+                object-fit: cover;
+            }
+        }
+        &__buy {
+            display: flex;
+            &-img img {
+                width: 360px;
+            }
+            &-link a {
+                line-height: 75px;
+                span::after {
+                    top: 23px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            width: 690px;
+            align-items: flex-start;
+        }
+    }
+    .footer-menu {
+        ul {
+            display: block;
+        }
+        &__item {
+            a {
+                line-height: 20px;
+            }
+            & + & {
+                margin-left: 0;
+                margin-top: 16px;
+            }
+        }
+    }
+    .header {
+        &__top {
+            width: 690px;
+            height: 90px;
+            position: relative;
+        }
+        &__promo {
+            padding: 50px 0;
+            &-img img {
+                width: 690px;
+            }
+            &-text {
+                bottom: 125px;
+            }
+        }
+    }
+    .list-menu {
+        display: none;
+    }
+    .button-menu {
+        position: static;
+        &__btn {
+            margin-top: 35px;
+        }
+        &__list {
+            top: 90px;
+            width: 100%;
+            &-item {
+                width: auto;
+                &--additional {
+                    display: block;
+                }
+            }
+        }
+    }
+    .icon-buttons {
+        &--header {
+            margin-top: 32px;
         }
     }
 }
 
 @media (max-width: 719px) {
-
+    .quality {
+        &__links a {
+            line-height: 60px;
+        }
+        &__inner {
+            width: 510px;
+        }
+        &__video {
+            // margin: 40px 0;
+            iframe {
+                width: 510px;
+                height: 286px;
+            }
+        }
+        &__content {
+            width: 510px;
+            height: 560px;
+        }
+    }
+    .info {
+        padding: 15px;
+        &__bage  {
+            margin-bottom: 23px;
+            line-height: 16px;
+            max-width: 165px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 36px; 
+        }
+        &::after {
+            top: 14px;
+        }
+        &--battery,
+        &--perfomance,
+        &--comfort,
+        &--noise,
+        &--quality {
+            width: 290px;
+            height: 195px;
+            z-index: 5;
+            .info__title {
+                max-width: 240px;
+            }
+        }
+        &--comfort {
+            height: 160px;
+        }
+        &--perfomance {
+            .info__title {
+                max-width: 230px;
+            }
+        }
+        &--battery {
+            height: auto;
+        }
+    }
+    .noise {
+        &__inner {
+            width: 510px;
+            height: 560px;
+            align-items: flex-end;
+        }
+        &__img {
+            z-index: 0;
+            img {
+                width: 510px;
+                height: 560px;
+            }
+        }
+    }
+    .comfort {
+        &__inner {
+            width: 510px;
+            height: 560px;
+            position: relative;
+        }
+        &__img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            img {
+                width: 510px;
+                height: 560px;
+                object-fit: cover;
+            }
+        } 
+    }
+    .perfomance {
+        &__inner {
+            width: 510px;
+        }
+        &__content {
+            background-position: center top;
+        }
+    }
+    .specs {
+        &__inner {
+            width: 510px;
+            padding: 60px 15px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 100%;
+            &-value {
+                margin-bottom: 12px;
+            }
+            &-amount {
+                margin-bottom: 12px;
+                font-size: 40px;
+                line-height: 45px;
+                span {
+                    font-size: 24px;
+                }
+            }
+            & + & {
+                margin-top: 60px;
+            }
+        }
+    }
+    .battery {
+        &__inner {
+            width: 510px;
+            padding-bottom: 120px;
+        }
+        &__content {
+            height: 560px;
+            align-items: flex-end;
+            position: relative;
+            &-img {
+                z-index: -1;
+                position: absolute;
+                img {
+                    width: 510px;
+                    height: 560px;
+                }
+            }
+        }
+        &__buy {
+            display: block;
+            &-img img {
+                width: 510px;
+            }
+            &-link a {
+                line-height: 60px;
+                span::after {
+                    top: 17px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            width: 510px;
+        }
+    }
+    .header {
+        &__top {
+            width: 510px;
+        }
+        &__promo {
+            padding: 40px 0;
+            &-img img {
+                width: 510px;
+            }
+            &-text {
+                bottom: 70px;
+                max-width: 200px;
+            }
+        }
+    }
 }
 
-@media (max-width: 546px) {
-
+@media (max-width: 539px) {
+    .quality {
+        &__link {
+            &--specs {
+                width: 50%;
+            }
+            &--buy {
+                width: 50%;
+            }
+        }
+        &__inner {
+            width: 450px;
+        }
+        &__video {
+            iframe {
+                width: 450px;
+                height: 253px;
+            }
+        }
+        &__content {
+            width: 450px;
+            height: 560px;
+        }
+    }
+    .noise {
+        &__inner {
+            width: 450px;
+            height: 560px;
+            align-items: flex-end;
+        }
+        &__img {
+            z-index: 0;
+            img {
+                width: 450px;
+                height: 560px;
+            }
+        }
+    }
+    .comfort {
+        &__inner {
+            width: 450px;
+            height: 560px;
+            position: relative;
+        }
+        &__img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            img {
+                width: 450px;
+                height: 560px;
+                object-fit: cover;
+            }
+        } 
+    }
+    .perfomance {
+        &__inner {
+            width: 450px;
+        }
+        &__content {
+            background-position: 57% top;
+        }
+    }
+    .specs {
+        &__inner {
+            width: 450px;
+        }
+    }
+    .battery {
+        &__inner {
+            width: 450px;
+        }
+        &__content {
+            &-img {
+                img {
+                    width: 450px;
+                }
+            }
+        }
+        &__buy {
+            &-img img {
+                width: 450px;
+            }
+            &-link a {
+                width: 290px;
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            width: 450px;
+        }
+    }
+    .header {
+        &__top {
+            width: 450px;
+        }
+        &__top {
+            width: 450px;
+        }
+        &__promo {
+            padding: 40px 0;
+            &-img img {
+                width: 450px;
+                height: 352px;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 @media (max-width: 479px) {
+    .quality {
+        &__links a {
+            line-height: 50px;
+        }
+        &__inner {
+            width: 290px;
+        }
+        &__video {
+            // margin: 30px 0;
+            iframe {
+                width: 290px;
+                height: 163px;
+            }
+        }
+        &__content {
+            width: 290px;
+            height: 415px;
+            background-position: -125px -24px;
+        }
+    }
+    .noise {
+        &__img img,
+        &__inner {
+            width: 290px;
+            height: auto;
+            display: block;
+        }
+        &__img {
+            position: static;
+        }
+    }
+    .comfort {
+        &__img img,
+        &__inner {
+            width: 290px;
+            height: auto;
+            display: flex;
+            flex-direction: column-reverse;
 
+        }
+        &__img {
+            position: static;
+        }
+    }
+    .info {
+        &--comfort {
+            height: 195px;
+        }
+    }
+    .perfomance {
+        &__inner {
+            width: 290px;
+        }
+        &__content {
+            height: 415px;
+            background-position: 68% 52%;
+        }
+    }
+    .specs {
+        &__inner {
+            width: 290px;
+            padding: 50px 15px;
+        }
+    }
+    .battery {
+        &__inner {
+            width: 290px;
+            padding-bottom: 100px;
+        }
+        &__content {
+            &-img {
+                top: 0;
+                img {
+                    width: 290px;
+                    height: 350px;
+                }
+            }
+        }
+        &__buy {
+            &-img img {
+                width: 290px;
+            }
+            &-link a {
+                width: 290px;
+            }
+        }
+    }
+    .footer {
+        &__inner {
+            width: 290px;
+            flex-direction: column-reverse;
+        }
+    }
+    .icon-buttons {
+        &--footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            margin-bottom: 32px;
+            &__search {
+                margin-right: 0;
+            }
+        }
+    }
+    .header {
+        &__top {
+            width: 290px;
+        }
+        &__promo {
+            &-img img {
+                width: 290px;
+                height: 352px;
+            }
+        }
+    }
 }
 

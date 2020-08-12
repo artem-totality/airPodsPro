@@ -110,6 +110,7 @@ body {
         
     }
     &--battery {
+        display: block;
         background-color: #000;
         height: 296px;
         .info__title {
