@@ -373,6 +373,9 @@
                 }
             }
         }
+        &:hover .button-menu__list {
+            display: none;
+        }
     }
     .icon-buttons {
         &--header {
@@ -787,3 +790,16 @@
     }
 }
 
+
+
+
+@media (min-width: 1035px) {
+    .button-menu {
+        &__list {
+            display: none !important;
+        }
+        &:hover .button-menu__list {
+            display: block !important;
+        }
+    }
+}

@@ -293,7 +293,7 @@ body {
 }
 
 .button-menu__list-item:hover a {
-  background-color: #0f0f0f;
+  background-color: #1f1f1f;
   font-family: "HelveticaNeueCyr-Black", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -330,14 +330,14 @@ body {
 }
 
 .list-menu__item a:hover {
-  background-color: #0f0f0f;
+  background-color: #1f1f1f;
   font-family: "HelveticaNeueCyr-Black", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .list-menu__item--active a {
-  background-color: #0f0f0f;
+  background-color: #1f1f1f;
   font-family: "HelveticaNeueCyr-Black", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -961,6 +961,9 @@ body {
   .button-menu__list-item--additional {
     display: block;
   }
+  .button-menu:hover .button-menu__list {
+    display: none;
+  }
   .icon-buttons--header {
     margin-top: 32px;
   }
@@ -1311,5 +1314,14 @@ body {
   .header__promo-img img {
     width: 290px;
     height: 352px;
+  }
+}
+
+@media (min-width: 1035px) {
+  .button-menu__list {
+    display: none !important;
+  }
+  .button-menu:hover .button-menu__list {
+    display: block !important;
   }
 }

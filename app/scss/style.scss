@@ -69,7 +69,7 @@
             }
             &:hover {
                 a {
-                    background-color: #0f0f0f;
+                    background-color: #1f1f1f;
                     @include helvetica-black;
                 }
             }
@@ -96,13 +96,13 @@
             padding: 74px 10px 46px;
             transition: all 0.3s;
             &:hover {
-                background-color: #0f0f0f;
+                background-color: #1f1f1f;
                 @include helvetica-black;
             }
         }
         &--active {
             a {
-                background-color: #0f0f0f;
+                background-color: #1f1f1f;
                 @include helvetica-black;
             }
         }
