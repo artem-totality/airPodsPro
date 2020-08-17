@@ -677,17 +677,18 @@
             line-height: 50px;
         }
         &__inner {
-            width: 290px;
+            width: 100%;
         }
         &__video {
             // margin: 30px 0;
             iframe {
-                width: 290px;
-                height: 163px;
+                width: 100%;
+                // height: 163px;
+                // height: auto;
             }
         }
         &__content {
-            width: 290px;
+            width: 100%;
             height: 415px;
             background-position: -125px -24px;
         }
@@ -695,7 +696,7 @@
     .noise {
         &__img img,
         &__inner {
-            width: 290px;
+            width: 100%;
             height: auto;
             display: block;
         }
@@ -706,7 +707,7 @@
     .comfort {
         &__img img,
         &__inner {
-            width: 290px;
+            width: 100%;
             height: auto;
             display: flex;
             flex-direction: column-reverse;
@@ -723,7 +724,7 @@
     }
     .perfomance {
         &__inner {
-            width: 290px;
+            width: 100%;
         }
         &__content {
             height: 415px;
@@ -732,27 +733,27 @@
     }
     .specs {
         &__inner {
-            width: 290px;
+            width: 100%;
             padding: 50px 15px;
         }
     }
     .battery {
         &__inner {
-            width: 290px;
+            width: 100%;
             padding-bottom: 100px;
         }
         &__content {
             &-img {
                 top: 0;
                 img {
-                    width: 290px;
+                    width: 100%;
                     height: 350px;
                 }
             }
         }
         &__buy {
             &-img img {
-                width: 290px;
+                width: 100%;
             }
             &-link a {
                 width: 290px;
@@ -761,7 +762,7 @@
     }
     .footer {
         &__inner {
-            width: 290px;
+            width: 100%;
             flex-direction: column-reverse;
         }
     }
@@ -779,19 +780,134 @@
     }
     .header {
         &__top {
-            width: 290px;
+            width: 100%;
         }
         &__promo {
             &-img img {
-                width: 290px;
+                width: 100%;
                 height: 352px;
             }
         }
     }
 }
 
-
-
+// @media (max-width: 479px) {
+//     .quality {
+//         &__links a {
+//             line-height: 50px;
+//         }
+//         &__inner {
+//             width: 290px;
+//         }
+//         &__video {
+//             // margin: 30px 0;
+//             iframe {
+//                 width: 290px;
+//                 height: 163px;
+//             }
+//         }
+//         &__content {
+//             width: 290px;
+//             height: 415px;
+//             background-position: -125px -24px;
+//         }
+//     }
+//     .noise {
+//         &__img img,
+//         &__inner {
+//             width: 290px;
+//             height: auto;
+//             display: block;
+//         }
+//         &__img {
+//             position: static;
+//         }
+//     }
+//     .comfort {
+//         &__img img,
+//         &__inner {
+//             width: 290px;
+//             height: auto;
+//             display: flex;
+//             flex-direction: column-reverse;
+//         }
+//         &__img {
+//             position: static;
+//         }
+//     }
+//     .info {
+//         &--comfort {
+//             height: 195px;
+//         }
+//     }
+//     .perfomance {
+//         &__inner {
+//             width: 290px;
+//         }
+//         &__content {
+//             height: 415px;
+//             background-position: 68% 52%;
+//         }
+//     }
+//     .specs {
+//         &__inner {
+//             width: 290px;
+//             padding: 50px 15px;
+//         }
+//     }
+//     .battery {
+//         &__inner {
+//             width: 290px;
+//             padding-bottom: 100px;
+//         }
+//         &__content {
+//             &-img {
+//                 top: 0;
+//                 img {
+//                     width: 290px;
+//                     height: 350px;
+//                 }
+//             }
+//         }
+//         &__buy {
+//             &-img img {
+//                 width: 290px;
+//             }
+//             &-link a {
+//                 width: 290px;
+//             }
+//         }
+//     }
+//     .footer {
+//         &__inner {
+//             width: 290px;
+//             flex-direction: column-reverse;
+//         }
+//     }
+//     .icon-buttons {
+//         &--footer {
+//             width: 100%;
+//             display: flex;
+//             justify-content: space-between;
+//             flex-direction: row-reverse;
+//             margin-bottom: 32px;
+//             &__search {
+//                 margin-right: 0;
+//             }
+//         }
+//     }
+//     .header {
+//         &__top {
+//             width: 290px;
+//         }
+//         &__promo {
+//             &-img img {
+//                 width: 290px;
+//                 height: 352px;
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 1035px) {
     .button-menu {
